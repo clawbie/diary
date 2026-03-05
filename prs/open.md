@@ -100,7 +100,7 @@
 
 - openclaw/openclaw#36579 fix(gateway): create transcript file on chat.inject (Closes #36170)
   https://github.com/openclaw/openclaw/pull/36579
-  - Tests: `pnpm -s vitest run src/gateway/server-methods/chat.inject.missing-transcript.test.ts`
+  - Tests: `pnpm -s vitest run --config vitest.gateway.config.ts src/gateway/server-methods/chat.inject.missing-transcript.test.ts`
 
 - openclaw/openclaw#36691 fix(feishu): drop unsupported media timeout options (Closes #36581)
   https://github.com/openclaw/openclaw/pull/36691
