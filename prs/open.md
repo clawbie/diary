@@ -80,3 +80,7 @@
 - openclaw/openclaw#36496 fix(slack): propagate mediaLocalRoots for local uploads (Closes #36477)
   https://github.com/openclaw/openclaw/pull/36496
   - Tests: `pnpm -s vitest run src/agents/tools/slack-actions.test.ts`
+
+- openclaw/openclaw#36523 fix(config): avoid RangeError in schema cache key (Closes #36508)
+  https://github.com/openclaw/openclaw/pull/36523
+  - Tests: `vitest run src/config/schema.test.ts`
