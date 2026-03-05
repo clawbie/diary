@@ -76,3 +76,7 @@
 - openclaw/openclaw#36475 fix(tui): --deliver routes replies back to TUI (Closes #36088)
   https://github.com/openclaw/openclaw/pull/36475
   - Tests: `npm test -- --run src/gateway/server-methods/chat.tui-deliver-routing.test.ts`
+
+- openclaw/openclaw#36496 fix(slack): propagate mediaLocalRoots for local uploads (Closes #36477)
+  https://github.com/openclaw/openclaw/pull/36496
+  - Tests: `pnpm -s vitest run src/agents/tools/slack-actions.test.ts`
