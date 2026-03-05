@@ -11,3 +11,9 @@
   - State: OPEN
   - Linked issue: #35564
   - Next action: 等 CI/Reviewer 反馈，按评论最小范围修订。
+
+- #35778 — fix(whatsapp): clarify allowFrom denial error
+  - https://github.com/openclaw/openclaw/pull/35778
+  - State: OPEN
+  - Linked issue: #35580
+  - Next action: 等 CI/Reviewer 反馈；如 maintainer 希望更短文案或变更 error type，再按建议微调。
