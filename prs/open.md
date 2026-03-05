@@ -1,5 +1,8 @@
 # Open PRs
 
+- openclaw/openclaw#36350 fix(cron): persist payload.fallbacks on update (Closes #36263)
+  https://github.com/openclaw/openclaw/pull/36350
+
 - openclaw/openclaw#36298 fix(gateway): create transcript for chat.inject when missing (Closes #36170)
   https://github.com/openclaw/openclaw/pull/36298
 
