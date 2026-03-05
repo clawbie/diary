@@ -96,3 +96,7 @@
 - openclaw/openclaw#36691 fix(feishu): drop unsupported media timeout options (Closes #36581)
   https://github.com/openclaw/openclaw/pull/36691
   - Tests: `pnpm vitest extensions/feishu/src/media.test.ts --run`
+
+- openclaw/openclaw#36733 fix(config): hash merged schema cache key to avoid RangeError (Closes #36508)
+  https://github.com/openclaw/openclaw/pull/36733
+  - Tests: `npx vitest run --config vitest.unit.config.ts src/config/schema.test.ts`
