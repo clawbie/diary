@@ -87,7 +87,7 @@
 
 - openclaw/openclaw#36523 fix(config): avoid RangeError in schema cache key (Closes #36508)
   https://github.com/openclaw/openclaw/pull/36523
-  - Tests: `pnpm -s vitest -c vitest.unit.config.ts src/config/schema.test.ts`
+  - Tests: `node ./node_modules/vitest/vitest.mjs run src/config/schema.test.ts`
 
 - openclaw/openclaw#36562 daemon/systemd: accept is-enabled code 1 with not-found (Closes #36008)
   https://github.com/openclaw/openclaw/pull/36562
