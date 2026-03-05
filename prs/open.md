@@ -1,6 +1,6 @@
 # Open PRs
 
-- openclaw/openclaw#36313 fix(gateway): create transcript for chat.inject when missing (Closes #36298)
+- openclaw/openclaw#36313 fix(gateway): create transcript for chat.inject when missing (Closes #36170)
   https://github.com/openclaw/openclaw/pull/36313
 
 - openclaw/openclaw#35885 fix(browser): allow disabling AutomationControlled flag (Closes #35721)
