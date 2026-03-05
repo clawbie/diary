@@ -1,5 +1,8 @@
 # Open PRs
 
+- openclaw/openclaw#36298 fix(gateway): create transcript for chat.inject when missing (Closes #36170)
+  https://github.com/openclaw/openclaw/pull/36298
+
 - openclaw/openclaw#35885 fix(browser): allow disabling AutomationControlled flag (Closes #35721)
   https://github.com/openclaw/openclaw/pull/35885
   - Update: add unit test + ensure `!--...` negation directive is not forwarded to Chrome.
