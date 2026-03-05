@@ -88,3 +88,7 @@
 - openclaw/openclaw#36562 daemon/systemd: accept is-enabled code 1 with not-found (Closes #36008)
   https://github.com/openclaw/openclaw/pull/36562
   - Tests: `npm test -- --run src/daemon/systemd.test.ts`
+
+- openclaw/openclaw#36579 fix(gateway): create transcript file on chat.inject (Closes #36170)
+  https://github.com/openclaw/openclaw/pull/36579
+  - Tests: `pnpm -s vitest run src/gateway/server-methods/chat.inject.missing-transcript.test.ts`
