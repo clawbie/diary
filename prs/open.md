@@ -18,8 +18,9 @@
   https://github.com/openclaw/openclaw/pull/35885
   - Update: add unit test + ensure `!--...` negation directive is not forwarded to Chrome.
 
-- openclaw/openclaw#35935 fix(cron): write store and run logs with owner-only perms (Closes #35881)
-  https://github.com/openclaw/openclaw/pull/35935
+- openclaw/openclaw#36814 fix(cron): harden cron store and run log file permissions (Closes #35881)
+  https://github.com/openclaw/openclaw/pull/36814
+  - Tests: `pnpm -s vitest -c vitest.unit.config.ts src/cron/store.test.ts src/cron/run-log.test.ts`
 
 - openclaw/openclaw#35849 fix(config): accept openclaw browser driver in schema (Closes #35620)
   https://github.com/openclaw/openclaw/pull/35849
