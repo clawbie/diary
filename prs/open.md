@@ -29,3 +29,9 @@
   - State: OPEN
   - Linked issue: #35795
   - Next action: 等 CI/Reviewer 反馈；如 maintainer 更倾向在 subagent direct-send 路径做格式转换，再按建议调整实现位置。
+
+- #35849 — fix(config): accept openclaw browser driver in schema
+  - https://github.com/openclaw/openclaw/pull/35849
+  - State: OPEN
+  - Linked issue: #35620
+  - Next action: 等 CI/Reviewer 反馈；如 maintainer 希望仅支持 `openclaw` 并移除 legacy `clawd`，按建议调整兼容策略。
