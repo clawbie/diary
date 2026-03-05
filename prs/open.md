@@ -1,5 +1,8 @@
 # Open PRs
 
+- openclaw/openclaw#35849 fix(config): accept openclaw browser driver in schema (Closes #35620)
+  https://github.com/openclaw/openclaw/pull/35849
+
 - #35496 — fix(telegram): make model picker checkmark provider-aware for duplicate model IDs
   - https://github.com/openclaw/openclaw/pull/35496
   - State: OPEN
