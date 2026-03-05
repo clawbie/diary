@@ -1,5 +1,9 @@
 # Open PRs
 
+- openclaw/openclaw#36804 fix(models): don’t preserve baseUrl from existing models.json (Closes #36353)
+  https://github.com/openclaw/openclaw/pull/36804
+  - Tests: `pnpm -s vitest -c vitest.scoped-config.ts` (include: `src/agents/models-config.fills-missing-provider-apikey-from-env-var.test.ts`)
+
 - openclaw/openclaw#36760 fix(discord): pass appliedTags through channel edit (Closes #36736)
   https://github.com/openclaw/openclaw/pull/36760
   - Update: move edits-channel test under unit runner (commit 0da933f93)
