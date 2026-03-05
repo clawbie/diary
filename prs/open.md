@@ -69,3 +69,6 @@
   - State: OPEN
   - Linked issue: #36385
   - Next action: 等 CI/Reviewer 反馈；如 maintainer 想把 error message 合并为统一的 “missing/empty” 文案，再按建议调整。
+
+- openclaw/openclaw#36437 fix(gateway): create missing transcript in chat.inject (Closes #36170)
+  https://github.com/openclaw/openclaw/pull/36437
