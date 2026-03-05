@@ -2,6 +2,7 @@
 
 - openclaw/openclaw#35885 fix(browser): allow disabling AutomationControlled flag (Closes #35721)
   https://github.com/openclaw/openclaw/pull/35885
+  - Update: add unit test + ensure `!--...` negation directive is not forwarded to Chrome.
 
 - openclaw/openclaw#35849 fix(config): accept openclaw browser driver in schema (Closes #35620)
   https://github.com/openclaw/openclaw/pull/35849
