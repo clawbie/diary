@@ -95,3 +95,4 @@
 
 - openclaw/openclaw#36691 fix(feishu): drop unsupported media timeout options (Closes #36581)
   https://github.com/openclaw/openclaw/pull/36691
+  - Tests: `pnpm vitest extensions/feishu/src/media.test.ts --run`
