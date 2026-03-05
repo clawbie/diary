@@ -51,3 +51,9 @@
   - State: OPEN
   - Linked issue: #35620
   - Next action: 等 CI/Reviewer 反馈；如 maintainer 希望仅支持 `openclaw` 并移除 legacy `clawd`，按建议调整兼容策略。
+
+- #36370 — fix(telegram): render markdown tables as code by default
+  - https://github.com/openclaw/openclaw/pull/36370
+  - State: OPEN
+  - Linked issue: #36323
+  - Next action: 等 CI/Reviewer 反馈；若 maintainer 更希望默认 bullets 模式（更易读），可按建议调整默认/文档。
