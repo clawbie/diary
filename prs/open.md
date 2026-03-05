@@ -2,6 +2,7 @@
 
 - openclaw/openclaw#36760 fix(discord): pass appliedTags through channel edit (Closes #36736)
   https://github.com/openclaw/openclaw/pull/36760
+  - Update: move edits-channel test under unit runner (commit 0da933f93)
 
 - openclaw/openclaw#36350 fix(cron): persist payload.fallbacks on update (Closes #36263)
   https://github.com/openclaw/openclaw/pull/36350
