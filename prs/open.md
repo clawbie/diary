@@ -17,3 +17,9 @@
   - State: OPEN
   - Linked issue: #35580
   - Next action: 等 CI/Reviewer 反馈；如 maintainer 希望更短文案或变更 error type，再按建议微调。
+
+- #35800 — fix(bluebubbles): avoid debounce crash on null text
+  - https://github.com/openclaw/openclaw/pull/35800
+  - State: OPEN
+  - Linked issue: #35777
+  - Next action: 等 CI/Reviewer 反馈；若 maintainer 希望更严格的类型保障（normalize 阶段修正 text 字段），按建议微调。
