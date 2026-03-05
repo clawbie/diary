@@ -83,4 +83,4 @@
 
 - openclaw/openclaw#36523 fix(config): avoid RangeError in schema cache key (Closes #36508)
   https://github.com/openclaw/openclaw/pull/36523
-  - Tests: `vitest run src/config/schema.test.ts`
+  - Tests: `pnpm -s vitest -c vitest.unit.config.ts src/config/schema.test.ts`
