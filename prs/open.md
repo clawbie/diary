@@ -63,3 +63,9 @@
   - State: OPEN
   - Linked issue: #36353
   - Next action: 等 CI/Reviewer 反馈；如 maintainer 希望只在显式配置存在时才启用 implicit provider，或想复用 mergeWithExistingProviderSecrets 策略，再按建议微调。
+
+- #36426 — fix(skill-creator): reject empty SKILL.md name/description
+  - https://github.com/openclaw/openclaw/pull/36426
+  - State: OPEN
+  - Linked issue: #36385
+  - Next action: 等 CI/Reviewer 反馈；如 maintainer 想把 error message 合并为统一的 “missing/empty” 文案，再按建议调整。
