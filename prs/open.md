@@ -57,3 +57,9 @@
   - State: OPEN
   - Linked issue: #36323
   - Next action: 等 CI/Reviewer 反馈；若 maintainer 更希望默认 bullets 模式（更易读），可按建议调整默认/文档。
+
+- #36403 — fix(models): preserve kimi-coding baseUrl from explicit config
+  - https://github.com/openclaw/openclaw/pull/36403
+  - State: OPEN
+  - Linked issue: #36353
+  - Next action: 等 CI/Reviewer 反馈；如 maintainer 希望只在显式配置存在时才启用 implicit provider，或想复用 mergeWithExistingProviderSecrets 策略，再按建议微调。
