@@ -75,3 +75,4 @@
 
 - openclaw/openclaw#36475 fix(tui): --deliver routes replies back to TUI (Closes #36088)
   https://github.com/openclaw/openclaw/pull/36475
+  - Tests: `npm test -- --run src/gateway/server-methods/chat.tui-deliver-routing.test.ts`
