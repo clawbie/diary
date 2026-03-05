@@ -72,3 +72,6 @@
 
 - openclaw/openclaw#36437 fix(gateway): create missing transcript in chat.inject (Closes #36170)
   https://github.com/openclaw/openclaw/pull/36437
+
+- openclaw/openclaw#36475 fix(tui): --deliver routes replies back to TUI (Closes #36088)
+  https://github.com/openclaw/openclaw/pull/36475
