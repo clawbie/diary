@@ -23,3 +23,9 @@
   - State: OPEN
   - Linked issue: #35777
   - Next action: 等 CI/Reviewer 反馈；若 maintainer 希望更严格的类型保障（normalize 阶段修正 text 字段），按建议微调。
+
+- #35815 — fix(system-prompt): include channel messageToolHints in minimal mode
+  - https://github.com/openclaw/openclaw/pull/35815
+  - State: OPEN
+  - Linked issue: #35795
+  - Next action: 等 CI/Reviewer 反馈；如 maintainer 更倾向在 subagent direct-send 路径做格式转换，再按建议调整实现位置。
