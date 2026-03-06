@@ -4,6 +4,10 @@
   https://github.com/openclaw/openclaw/pull/36981
   - Tests: not run (no dependency installs); validated by static check that the dead anchor was removed (`rg`)
 
+- openclaw/openclaw#37029 fix(feishu): correct deliveryContext.to prefix (Closes #36987)
+  https://github.com/openclaw/openclaw/pull/37029
+  - Tests: `pnpm exec vitest -c vitest.extensions.config.ts extensions/feishu/src/bot.test.ts extensions/feishu/src/send-target.test.ts`
+
 - openclaw/openclaw#37021 docs(claude-max-api-proxy): update repo links (Closes #20260)
   https://github.com/openclaw/openclaw/pull/37021
   - Tests: `node scripts/docs-link-audit.mjs`
