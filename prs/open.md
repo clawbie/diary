@@ -1,5 +1,10 @@
 # Open PRs
 
+- openclaw/openclaw#38082 fix(webchat): hide delivery-mirror transcript entries from chat.history (Closes #38061)
+  https://github.com/openclaw/openclaw/pull/38082
+  - Summary: `chat.history` drops assistant transcript entries where `provider=openclaw` + `model=delivery-mirror` so webchat doesn't render the same assistant reply twice.
+  - Tests: `node_modules/.bin/vitest run --config vitest.gateway.config.ts src/gateway/server.chat.gateway-server-chat.test.ts`
+
 - openclaw/openclaw#37958 fix(telegram): use runtime config snapshot for SecretRef botToken (Closes #37909)
   https://github.com/openclaw/openclaw/pull/37958
   - Summary: prefer `getRuntimeConfigSnapshot()` for Telegram sends so SecretRef-backed `channels.telegram.botToken` is already resolved when tool-driven outbound paths call into telegram/send.
