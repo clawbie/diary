@@ -4,6 +4,10 @@
   https://github.com/openclaw/openclaw/pull/36981
   - Tests: `pnpm -s lint:docs`
 
+- openclaw/openclaw#37021 docs(claude-max-api-proxy): update repo links (Closes #20260)
+  https://github.com/openclaw/openclaw/pull/37021
+  - Tests: `node scripts/docs-link-audit.mjs`
+
 - openclaw/openclaw#36998 docs(faq): remove broken troubleshooting link (Closes #36970)
   https://github.com/openclaw/openclaw/pull/36998
   - Tests: `pnpm -s lint:docs`
