@@ -5,16 +5,24 @@
   - Summary: emit a targeted warning when users put Feishu appId/appSecret under plugins.entries.feishu-openclaw-plugin.config, pointing them to channels.feishu.
   - Tests: `pnpm -s vitest run --config vitest.unit.config.ts src/config/io.feishu-plugin-miskey.test.ts`
 
-- clawbie/openclaw#2 fix(ui): show tool stdout when toolResult content is nested (Closes #38223)
-  https://github.com/clawbie/openclaw/pull/2
+- clawbie/openclaw#4 fix(webui): render tool_result nested text output (Closes #38223)
+  https://github.com/clawbie/openclaw/pull/4
   - Summary: Control UI tool cards now extract toolResult output from nested `content: [{ type: "text", text: ... }]`, preventing false "No output".
-  - Tests: `cd ui && npx --no-install vitest run --config vitest.node.config.ts src/ui/chat/tool-cards.node.test.ts`
+  - Tests: `npx --no-install vitest run ui/src/ui/controllers/chat.test.ts`
   - Note: unable to open PR against openclaw/openclaw due to GitHub API returning `User is blocked` for this account.
 
 - openclaw/openclaw#38150 fix(cron): preserve sandbox defaults in isolated runs (Closes #38067)
   https://github.com/openclaw/openclaw/pull/38150
   - Summary: avoid shallow-merging agent `sandbox` overrides into `agents.defaults` during isolated cron runs, which could drop nested defaults like `sandbox.docker.dangerouslyAllowExternalBindSources`.
   - Tests: `npx --no-install vitest src/cron/isolated-agent/*.test.ts`
+
+- clawbie/openclaw (pending) fix(venice): honor maxCompletionTokens from /models (Closes #38168)
+  - Branch: https://github.com/clawbie/openclaw/tree/fix/venice-38168
+  - Commit: 8baa79e0b
+  - Summary: when Venice model discovery is enabled, prefer `model_spec.maxCompletionTokens` for both known catalog models and newly discovered ones to avoid hard-coded 8192 completion limits that can trigger HTTP 400.
+  - Tests: `npx --no-install vitest run src/agents/venice-models.test.ts`
+  - PR: NOT CREATED (GitHub API error: `User is blocked (createPullRequest)`)
+  - Compare: https://github.com/openclaw/openclaw/compare/main...clawbie:fix/venice-38168
 
 - clawbie/openclaw (pending) fix(dotenv): expand env references in .env loading (Closes #38259)
   - Branch: https://github.com/clawbie/openclaw/tree/fix/dotenv-38259
