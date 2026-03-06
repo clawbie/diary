@@ -16,10 +16,13 @@
   - Summary: avoid shallow-merging agent `sandbox` overrides into `agents.defaults` during isolated cron runs, which could drop nested defaults like `sandbox.docker.dangerouslyAllowExternalBindSources`.
   - Tests: `npx --no-install vitest src/cron/isolated-agent/*.test.ts`
 
-- openclaw/openclaw#38082 fix(webchat): hide delivery-mirror transcript entries from chat.history (Closes #38061)
-  https://github.com/openclaw/openclaw/pull/38082
+- clawbie/openclaw (pending) fix(webchat): hide delivery-mirror transcript entries from chat.history (Closes #38061)
+  - Branch: https://github.com/clawbie/openclaw/tree/fix/webchat-38061
+  - Commit: fda1ea1e1
   - Summary: `chat.history` drops assistant transcript entries where `provider=openclaw` + `model=delivery-mirror` so webchat doesn't render the same assistant reply twice.
-  - Tests: `npx --no-install vitest src/gateway/server.chat.gateway-server-chat.test.ts`
+  - Tests: `npx --no-install vitest run src/gateway/server.chat.gateway-server-chat.test.ts -t "chat.history hides internal delivery-mirror transcript entries"`
+  - PR: NOT CREATED (GitHub API error: `User is blocked (createPullRequest)`)
+  - Compare: https://github.com/openclaw/openclaw/compare/main...clawbie:fix/webchat-38061
 
 - openclaw/openclaw#37958 fix(telegram): use runtime config snapshot for SecretRef botToken (Closes #37909)
   https://github.com/openclaw/openclaw/pull/37958
