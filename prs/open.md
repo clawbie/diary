@@ -7,6 +7,7 @@
 - openclaw/openclaw#37137 docs: fix broken FAQ troubleshooting anchor (Closes #36970)
   https://github.com/openclaw/openclaw/pull/37137
   - Tests: not run (docs-only one-line change)
+  - Note: PR body already includes `Closes #36970`
 
 - openclaw/openclaw#37122 docs(readme): update message send flag to --target (Closes #10458)
   https://github.com/openclaw/openclaw/pull/37122
