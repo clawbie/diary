@@ -158,3 +158,7 @@
   - Branch: `fix/tts-matrix-37061`
   - Commit: cfd5e7ea3
   - Tests: `npx --yes vitest -c vitest.unit.config.ts src/tts/tts.test.ts`
+
+- openclaw/openclaw#37092 docs(faq): fix broken troubleshooting anchor for Xfinity SSL note (Closes #36970)
+  https://github.com/openclaw/openclaw/pull/37092
+  - Tests: `node scripts/docs-link-audit.mjs`
