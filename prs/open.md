@@ -24,12 +24,13 @@
   - PR: NOT CREATED (GitHub API error: `User is blocked (createPullRequest)`)
   - Compare: https://github.com/openclaw/openclaw/compare/main...clawbie:fix/venice-38168
 
-- clawbie/openclaw (pending) fix(dotenv): expand env references in .env loading (Closes #38259)
+- clawbie/openclaw#5 fix(dotenv): expand env references in .env loading (Closes #38259)
+  https://github.com/clawbie/openclaw/pull/5
   - Branch: https://github.com/clawbie/openclaw/tree/fix/dotenv-38259
   - Commit: 108c675be
   - Summary: expand `${VAR}` / `$VAR` references during dotenv loading while preserving shell env precedence and non-overriding semantics.
-  - Tests: `npx --no-install vitest -c vitest.unit.config.ts src/infra/dotenv.test.ts`
-  - PR: NOT CREATED (GitHub API error: `User is blocked (createPullRequest)`)
+  - Tests: `pnpm -s vitest -c vitest.unit.config.ts src/infra/dotenv.test.ts`
+  - Note: unable to open PR against openclaw/openclaw due to GitHub API returning `User is blocked` for this account.
   - Compare: https://github.com/openclaw/openclaw/compare/main...clawbie:openclaw:fix/dotenv-38259
 
 - clawbie/openclaw (pending) fix(gateway): hide delivery-mirror entries from chat history (Closes #38061)
