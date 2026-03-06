@@ -64,8 +64,8 @@
 
 - openclaw/openclaw#37858 docs: fix broken FAQ troubleshooting anchor (Closes #36970)
   https://github.com/openclaw/openclaw/pull/37858
-  - Summary: fix Xfinity/Comcast SSL FAQ entry to link to `/help/troubleshooting` (remove non-existent anchor) to avoid dead navigation.
-  - Tests: not run (docs-only)
+  - Summary: fix Xfinity/Comcast SSL FAQ entry to link to `/help/troubleshooting` (remove non-existent anchor) to avoid dead navigation. Also sync the same fix in `docs/zh-CN/help/faq.md`.
+  - Lightweight validation: `node -e "const fs=require('fs'); const p=['docs/help/faq.md','docs/zh-CN/help/faq.md']; for(const f of p){const s=fs.readFileSync(f,'utf8'); if(!s.includes('/help/troubleshooting')) throw new Error('missing troubleshooting link in '+f);} console.log('OK');"` ✅
 
 - openclaw/openclaw#37308 docs: update claude-max-api-proxy links (Closes #20260)
   https://github.com/openclaw/openclaw/pull/37308
