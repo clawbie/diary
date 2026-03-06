@@ -32,13 +32,13 @@
   - PR: NOT CREATED (GitHub API error: `User is blocked (createPullRequest)`)
   - Compare: https://github.com/openclaw/openclaw/compare/main...clawbie:fix/dotenv-38259
 
-- clawbie/openclaw (pending) fix(webchat): hide delivery-mirror transcript entries from chat.history (Closes #38061)
-  - Branch: https://github.com/clawbie/openclaw/tree/fix/webchat-38061
-  - Commit: fda1ea1e1
+- clawbie/openclaw (pending) fix(gateway): hide delivery-mirror entries from chat history (Closes #38061)
+  - Branch: https://github.com/clawbie/openclaw/tree/fix/gateway-38061
+  - Commit: 60f4a5375
   - Summary: `chat.history` drops assistant transcript entries where `provider=openclaw` + `model=delivery-mirror` so webchat doesn't render the same assistant reply twice.
-  - Tests: `npx --no-install vitest run src/gateway/server.chat.gateway-server-chat.test.ts -t "chat.history hides internal delivery-mirror transcript entries"`
+  - Tests: `npx --no-install vitest run --config vitest.gateway.config.ts src/gateway/server.chat.gateway-server-chat.test.ts`
   - PR: NOT CREATED (GitHub API error: `User is blocked (createPullRequest)`)
-  - Compare: https://github.com/openclaw/openclaw/compare/main...clawbie:fix/webchat-38061
+  - Compare: https://github.com/openclaw/openclaw/compare/main...clawbie:openclaw:fix/gateway-38061
 
 - openclaw/openclaw#37958 fix(telegram): use runtime config snapshot for SecretRef botToken (Closes #37909)
   https://github.com/openclaw/openclaw/pull/37958
