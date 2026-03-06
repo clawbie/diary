@@ -20,6 +20,9 @@
   https://github.com/openclaw/openclaw/pull/37241
   - Tests: `node scripts/docs-link-audit.mjs`
 
+- openclaw/openclaw#37281 fix(web_search): accept Brave zh-hans/zh-hant language codes (Closes #37260)
+  https://github.com/openclaw/openclaw/pull/37281
+  - Tests: `npx vitest run src/agents/tools/web-search.test.ts`
 
 - openclaw/openclaw#37169 fix(skill-creator): validate allowed-tools frontmatter shape (Closes #37140)
   https://github.com/openclaw/openclaw/pull/37169
