@@ -40,6 +40,8 @@
 
 - clawbie/openclaw (pending) fix(voice-call): avoid outbound initial message race with streaming (Closes #36869)
   - Branch: https://github.com/clawbie/openclaw/tree/fix/voice-call-36869
+  - Commit: 132a8fbf0
+  - Tests: not run (node_modules missing; no installs allowed)
   - PR: NOT CREATED (gh auth unavailable in this environment)
   - Suggested create URL:
     https://github.com/openclaw/openclaw/compare/main...clawbie:fix/voice-call-36869?expand=1
