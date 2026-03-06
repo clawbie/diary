@@ -1,8 +1,8 @@
 # Open PRs
 
-- openclaw/openclaw#36981 docs: fix broken FAQ troubleshooting link (Closes #36970)
+- openclaw/openclaw#36981 docs(faq): fix broken troubleshooting anchor (Closes #36970)
   https://github.com/openclaw/openclaw/pull/36981
-  - Tests: `node scripts/docs-link-audit.mjs`
+  - Tests: `pnpm -s lint:docs`
 
 - openclaw/openclaw#36804 fix(models): don’t preserve baseUrl from existing models.json (Closes #36353)
   https://github.com/openclaw/openclaw/pull/36804
