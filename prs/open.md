@@ -1,5 +1,9 @@
 # Open PRs
 
+- openclaw/openclaw#37308 docs: update claude-max-api-proxy links (Closes #20260)
+  https://github.com/openclaw/openclaw/pull/37308
+  - Tests: `npm test` (partial run; exited with SIGTERM; no failures reported before termination)
+
 - openclaw/openclaw#37223 fix(tui): allow toggling deliver via /settings (Closes #37168)
   https://github.com/openclaw/openclaw/pull/37223
   - Tests: `pnpm -s vitest -c vitest.unit.config.ts src/tui/tui-command-handlers.test.ts`, `pnpm -s vitest -c vitest.unit.config.ts src/tui/tui-session-actions.test.ts src/tui/tui.test.ts`
