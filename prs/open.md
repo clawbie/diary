@@ -10,8 +10,8 @@
   - Summary: treat `systemctl --user is-enabled` "Failed to connect to bus" as "not enabled" so install/onboard can proceed.
   - Tests: `pnpm -s vitest run src/daemon/systemd.test.ts`
 
-- openclaw/openclaw#37445 fix(telegram): skip empty replies instead of crashing (Closes #37278)
-  https://github.com/openclaw/openclaw/pull/37445
+- openclaw/openclaw#37292 fix(telegram): skip empty replies instead of crashing (Closes #37278)
+  https://github.com/openclaw/openclaw/pull/37292
   - Summary: drop whitespace-only Telegram text replies so we never call sendMessage with empty text (prevents provider restarts).
   - Tests: not run (no node_modules here; no installs allowed)
 
