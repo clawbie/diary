@@ -5,10 +5,10 @@
   - Summary: emit a targeted warning when users put Feishu appId/appSecret under plugins.entries.feishu-openclaw-plugin.config, pointing them to channels.feishu.
   - Tests: `pnpm -s vitest run --config vitest.unit.config.ts src/config/io.feishu-plugin-miskey.test.ts`
 
-- clawbie/openclaw#4 fix(webui): render tool_result nested text output (Closes #38223)
-  https://github.com/clawbie/openclaw/pull/4
+- clawbie/openclaw#7 fix(webui): render tool_result content output (Closes #38223)
+  https://github.com/clawbie/openclaw/pull/7
   - Summary: Control UI tool cards now extract toolResult output from nested `content: [{ type: "text", text: ... }]`, preventing false "No output".
-  - Tests: `npx --no-install vitest run ui/src/ui/controllers/chat.test.ts`
+  - Tests: `npm test -- ui/src/ui/controllers/chat.test.ts`
   - Note: unable to open PR against openclaw/openclaw due to GitHub API returning `User is blocked` for this account.
 
 - openclaw/openclaw#38150 fix(cron): preserve sandbox defaults in isolated runs (Closes #38067)
