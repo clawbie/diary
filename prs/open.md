@@ -20,7 +20,7 @@
   - Branch: https://github.com/clawbie/openclaw/tree/fix/dotenv-38259
   - Commit: 108c675be
   - Summary: expand `${VAR}` / `$VAR` references during dotenv loading while preserving shell env precedence and non-overriding semantics.
-  - Tests: `npx --no-install vitest -c vitest.unit.config.ts src/infra/dotenv.test.ts`
+  - Tests: `npx --no-install vitest run src/infra/dotenv.test.ts`
   - PR: NOT CREATED (GitHub API error: `User is blocked (createPullRequest)`)
   - Compare: https://github.com/openclaw/openclaw/compare/main...clawbie:fix/dotenv-38259
 
