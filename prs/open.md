@@ -1,5 +1,10 @@
 # Open PRs
 
+- openclaw/openclaw#37292 fix(telegram): skip empty text replies (Closes #37278)
+  https://github.com/openclaw/openclaw/pull/37292
+  - Summary: drop whitespace-only Telegram text replies so we never call sendMessage with empty text (prevents provider restarts).
+  - Tests: not run (node_modules/vitest not available; syntax checked with `node -c`)
+
 - openclaw/openclaw#37092 fix(docs): remove broken troubleshooting link from FAQ (Closes #36970)
   https://github.com/openclaw/openclaw/pull/37092
   - Summary: remove dead cross-doc troubleshooting link in Xfinity/Comcast SSL FAQ entry.
