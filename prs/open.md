@@ -152,3 +152,9 @@
   - Status: OPEN (awaiting review)
   - Update: avoid bare URL for Xfinity reference (commit 3c7fb6b3c)
   - Tests: `pnpm check:docs`
+
+- openclaw/openclaw#37086 fix(tts): send Matrix TTS replies as voice bubbles (Closes #37061)
+  https://github.com/openclaw/openclaw/pull/37086
+  - Branch: `fix/tts-matrix-37061`
+  - Commit: cfd5e7ea3
+  - Tests: `npx --yes vitest -c vitest.unit.config.ts src/tts/tts.test.ts`
