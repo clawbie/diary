@@ -10,6 +10,7 @@
 
 - openclaw/openclaw#36925 docs(session-logs): include archived .reset transcripts in globs (Closes #36799)
   https://github.com/openclaw/openclaw/pull/36925
+  - Branch: `fix/session-logs-36799`
 
 - openclaw/openclaw#36914 fix(podman): pass OPENCLAW_DOCKER_APT_PACKAGES to podman build (Closes #35397)
   https://github.com/openclaw/openclaw/pull/36914
