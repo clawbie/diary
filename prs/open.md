@@ -30,9 +30,9 @@
 - openclaw/openclaw#35849 fix(config): accept openclaw browser driver in schema (Closes #35620)
   https://github.com/openclaw/openclaw/pull/35849
 
-- clawbie/openclaw (pending) fix(voice-call): avoid speaking initial message before stream connects (Closes #36869)
+- clawbie/openclaw (pending) fix(voice-call): avoid outbound initial message race with streaming (Closes #36869)
   - Branch: https://github.com/clawbie/openclaw/tree/fix/voice-call-36869
-  - PR: NOT CREATED (no GitHub auth; unable to push branch from this environment)
+  - PR: NOT CREATED (gh auth unavailable in this environment)
   - Suggested create URL:
     https://github.com/openclaw/openclaw/compare/main...clawbie:fix/voice-call-36869?expand=1
 
