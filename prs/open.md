@@ -62,6 +62,13 @@
   - Summary: resolve secret-backed config fields (e.g. env var refs) before validating plugin connectivity and building the status report.
   - Tests: `pnpm test:fast -- src/plugins/status.test.ts`
 
+- openclaw/openclaw#38043 fix(windows): npm pack works when Node path contains spaces (Closes #37563)
+  https://github.com/openclaw/openclaw/pull/38043
+  - Branch: `fix/windows-37563`
+  - Commit: `081676c4a`
+  - Summary: detect node.exe + npm-cli.js invocation and (when any argv contains whitespace) enable `windowsVerbatimArguments` and pre-quote args per CreateProcess rules to avoid argv mangling under `C:\\Program Files\\...`.
+  - Tests: `pnpm -s vitest src/process/exec.windows.test.ts`
+
 - openclaw/openclaw#37646 fix(models): include config-injected models in --all list (Closes #37635)
   https://github.com/openclaw/openclaw/pull/37646
   - Summary: merge config-only provider models (from `models.providers.<provider>.models`) into the `--all` models list, even when missing from the underlying registry.
