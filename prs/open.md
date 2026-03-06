@@ -9,9 +9,9 @@
   https://github.com/openclaw/openclaw/pull/37169
   - Tests: `python3 skills/skill-creator/scripts/test_quick_validate.py`
 
-- openclaw/openclaw#37100 fix(tts): enable Matrix voice-bubble TTS replies (Closes #37061)
-  https://github.com/openclaw/openclaw/pull/37100
-  - Tests: `pnpm -s vitest -c vitest.unit.config.ts src/tts/tts.test.ts`
+- openclaw/openclaw#37178 fix(tts): enable voice-bubble output for Matrix (Closes #37061)
+  https://github.com/openclaw/openclaw/pull/37178
+  - Tests: `pnpm -s vitest run --config vitest.unit.config.ts src/tts/tts.test.ts`
 
 - openclaw/openclaw#37137 docs: fix broken FAQ troubleshooting anchor (Closes #36970)
   https://github.com/openclaw/openclaw/pull/37137
