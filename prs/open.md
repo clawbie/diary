@@ -149,5 +149,6 @@
 
 - openclaw/openclaw#37039 docs: fix broken Xfinity SSL troubleshooting anchor (Closes #36970)
   https://github.com/openclaw/openclaw/pull/37039
+  - Status: OPEN (awaiting review)
   - Follow-up: fix markdownlint MD034 bare URL in troubleshooting ref (commit 3c7fb6b3c)
   - Tests: `pnpm check:docs`
