@@ -1,12 +1,13 @@
 # Open PRs
 
+- openclaw/openclaw#37174 fix(media): resolve relative local media paths against allowed roots (Closes #37111)
+  https://github.com/openclaw/openclaw/pull/37174
+  - Tests: `pnpm -s vitest run -c vitest.config.ts src/web/media.test.ts`
+
+
 - openclaw/openclaw#37169 fix(skill-creator): validate allowed-tools frontmatter shape (Closes #37140)
   https://github.com/openclaw/openclaw/pull/37169
   - Tests: `python3 skills/skill-creator/scripts/test_quick_validate.py`
-
-- openclaw/openclaw#37149 fix(media): resolve relative local paths against allowed roots (Closes #37111)
-  https://github.com/openclaw/openclaw/pull/37149
-  - Tests: `npm test -- src/web/media.test.ts`
 
 - openclaw/openclaw#37100 fix(tts): enable Matrix voice-bubble TTS replies (Closes #37061)
   https://github.com/openclaw/openclaw/pull/37100
