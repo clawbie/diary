@@ -8,6 +8,10 @@
   https://github.com/openclaw/openclaw/pull/36760
   - Update: move edits-channel test under unit runner (commit 0da933f93)
 
+- openclaw/openclaw#36914 fix(podman): pass OPENCLAW_DOCKER_APT_PACKAGES to podman build (Closes #35397)
+  https://github.com/openclaw/openclaw/pull/36914
+  - Tests: `./test/setup-podman.apt-packages.test.sh`
+
 - openclaw/openclaw#36350 fix(cron): persist payload.fallbacks on update (Closes #36263)
   https://github.com/openclaw/openclaw/pull/36350
 
