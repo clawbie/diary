@@ -35,6 +35,11 @@
   - Summary: treat `systemctl --user is-enabled` "Failed to connect to bus" as "not enabled" so install/onboard can proceed.
   - Tests: `pnpm -s vitest run src/daemon/systemd.test.ts`
 
+- openclaw/openclaw#37646 fix(models): include config-injected models in --all list (Closes #37635)
+  https://github.com/openclaw/openclaw/pull/37646
+  - Summary: merge config-only provider models (from `models.providers.<provider>.models`) into the `--all` models list, even when missing from the underlying registry.
+  - Tests: `pnpm -s vitest run src/commands/models/list.list-command.all-configured.test.ts`, `pnpm -s vitest run src/commands/models/list.list-command.forward-compat.test.ts`
+
 - openclaw/openclaw#37292 fix(telegram): skip empty replies instead of crashing (Closes #37278)
   https://github.com/openclaw/openclaw/pull/37292
   - Summary: drop whitespace-only Telegram text replies so we never call sendMessage with empty text (prevents provider restarts).
