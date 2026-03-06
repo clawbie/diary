@@ -31,10 +31,11 @@
   - Summary: treat `{ "action": "NO_REPLY" }` as silent when parsing reply directives, preventing it from being delivered as literal JSON to end users.
   - Tests: `pnpm -s vitest -c vitest.unit.config.ts src/infra/outbound/payloads.test.ts`
 
-- openclaw/openclaw#37938 fix(nextcloud-talk): avoid importing src/infra from bundled extension (Closes #37915)
+- openclaw/openclaw#37938 fix(nextcloud-talk): avoid importing src/infra from bundled extension (Closes #37915) [CLOSED]
   https://github.com/openclaw/openclaw/pull/37938
   - Summary: avoid importing from ../../../src (not shipped in npm release) in the Nextcloud Talk extension, preventing plugin load crash.
   - Tests: `npx --no-install vitest run extensions/nextcloud-talk/src/channel.startup.test.ts`
+  - Note (2026-03-07): PR was closed (unmerged); issue #37915 remains open.
 
 - openclaw/openclaw#37559 fix(logging): rotate file logs after midnight for long-running gateway (Closes #37388)
   https://github.com/openclaw/openclaw/pull/37559
