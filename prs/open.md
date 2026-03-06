@@ -38,7 +38,7 @@
 - openclaw/openclaw#37719 fix(process): wrap npm/npx .cmd via cmd.exe when npm-cli.js missing (Closes #37563)
   https://github.com/openclaw/openclaw/pull/37719
   - Summary: when npm/npx CLI script can't be resolved (e.g. nvm-windows/volta/fnm), fall back to executing the npm.cmd/npx.cmd shims via cmd.exe wrapper.
-  - Tests: `pnpm -s vitest run src/process/exec.windows.test.ts`
+  - Tests: `pnpm test src/process/exec.windows.test.ts`
 
 - openclaw/openclaw#37646 fix(models): include config-injected models in --all list (Closes #37635)
   https://github.com/openclaw/openclaw/pull/37646
