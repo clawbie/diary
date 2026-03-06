@@ -279,3 +279,8 @@
   https://github.com/openclaw/openclaw/pull/36981
   - Summary: Fixes dead FAQ link by pointing to /help/troubleshooting without a missing anchor.
   - Tests: not run (docs-only; vitest binary not available in this environment)
+
+- openclaw/openclaw#37754 fix(plugins): resolve secrets for CLI plugin status (Closes #37633)
+  https://github.com/openclaw/openclaw/pull/37754
+  - Summary: buildPluginStatusReport now loads config with secret resolution enabled so env-backed SecretRef credentials don’t cause plugin registration errors in `openclaw plugins list`.
+  - Tests: `npm test -- --config vitest.unit.config.ts src/plugins/status.test.ts`
