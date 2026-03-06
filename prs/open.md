@@ -1,5 +1,10 @@
 # Open PRs
 
+- openclaw/openclaw#37462 fix(cron): handle paginated cron.list response (Closes #37299)
+  https://github.com/openclaw/openclaw/pull/37462
+  - Summary: accept either a raw array (older gateway) or paginated response `{ jobs, total, ... }` for `openclaw cron list` to avoid CLI TypeError.
+  - Tests: `npm test -- src/cli/cron-cli/shared.test.ts`
+
 - openclaw/openclaw#37419 fix(cli): keep stdout clean for --json commands (Closes #37323)
   https://github.com/openclaw/openclaw/pull/37419
   - Summary: route startup/plugin logs to stderr when `--json` is present so JSON output isn't corrupted.
