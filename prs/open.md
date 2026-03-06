@@ -4,6 +4,10 @@
   https://github.com/openclaw/openclaw/pull/36981
   - Tests: `pnpm -s lint:docs`
 
+- openclaw/openclaw#36998 docs(faq): remove broken troubleshooting link (Closes #36970)
+  https://github.com/openclaw/openclaw/pull/36998
+  - Tests: `pnpm -s lint:docs`
+
 - openclaw/openclaw#36804 fix(models): don’t preserve baseUrl from existing models.json (Closes #36353)
   https://github.com/openclaw/openclaw/pull/36804
   - Tests: `pnpm -s vitest -c vitest.scoped-config.ts` (include: `src/agents/models-config.fills-missing-provider-apikey-from-env-var.test.ts`)
