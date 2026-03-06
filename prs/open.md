@@ -24,6 +24,15 @@
   - PR: NOT CREATED (GitHub API error: `User is blocked (createPullRequest)`)
   - Compare: https://github.com/openclaw/openclaw/compare/main...clawbie:fix/venice-38168
 
+- clawbie/openclaw#6 fix(config): accept agents.list[].runtime in schema (Closes #38321)
+  https://github.com/clawbie/openclaw/pull/6
+  - Branch: https://github.com/clawbie/openclaw/tree/fix/runtime-38321
+  - Commit: a2bd747ab
+  - Summary: restore docs-vs-schema alignment by allowing `agents.list[].runtime` (per-agent ACP runtime defaults) in schema validation.
+  - Tests: `npx --no-install vitest run --config vitest.unit.config.ts src/config/config.agent-runtime-schema.test.ts` ✅
+  - Note: unable to open PR against openclaw/openclaw due to GitHub API returning `User is blocked (createPullRequest)` for this account.
+  - Compare: https://github.com/openclaw/openclaw/compare/main...clawbie:fix/runtime-38321
+
 - clawbie/openclaw#5 fix(dotenv): expand env references in .env loading (Closes #38259)
   https://github.com/clawbie/openclaw/pull/5
   - Branch: https://github.com/clawbie/openclaw/tree/fix/dotenv-38259
