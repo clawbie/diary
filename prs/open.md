@@ -16,6 +16,14 @@
   - Summary: avoid shallow-merging agent `sandbox` overrides into `agents.defaults` during isolated cron runs, which could drop nested defaults like `sandbox.docker.dangerouslyAllowExternalBindSources`.
   - Tests: `npx --no-install vitest src/cron/isolated-agent/*.test.ts`
 
+- clawbie/openclaw (pending) fix(dotenv): expand env references in .env loading (Closes #38259)
+  - Branch: https://github.com/clawbie/openclaw/tree/fix/dotenv-38259
+  - Commit: 108c675be
+  - Summary: expand `${VAR}` / `$VAR` references during dotenv loading while preserving shell env precedence and non-overriding semantics.
+  - Tests: `npx --no-install vitest -c vitest.unit.config.ts src/infra/dotenv.test.ts`
+  - PR: NOT CREATED (GitHub API error: `User is blocked (createPullRequest)`)
+  - Compare: https://github.com/openclaw/openclaw/compare/main...clawbie:fix/dotenv-38259
+
 - clawbie/openclaw (pending) fix(webchat): hide delivery-mirror transcript entries from chat.history (Closes #38061)
   - Branch: https://github.com/clawbie/openclaw/tree/fix/webchat-38061
   - Commit: fda1ea1e1
