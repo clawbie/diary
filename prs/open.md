@@ -1,5 +1,9 @@
 # Open PRs
 
+- openclaw/openclaw#37100 fix(tts): enable Matrix voice-bubble TTS replies (Closes #37061)
+  https://github.com/openclaw/openclaw/pull/37100
+  - Tests: `pnpm -s vitest -c vitest.unit.config.ts src/tts/tts.test.ts`
+
 - openclaw/openclaw#37122 docs(readme): update message send flag to --target (Closes #10458)
   https://github.com/openclaw/openclaw/pull/37122
   - Tests: `pnpm -s lint README.md`, `pnpm -s lint:docs README.md`, `pnpm -s docs:check-links`
