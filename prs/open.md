@@ -1,5 +1,11 @@
 # Open PRs
 
+- openclaw/openclaw#38239 config: warn when Feishu creds miskeyed under plugin config (Closes #38217)
+  https://github.com/openclaw/openclaw/pull/38239
+  - Summary: emit a targeted warning when users put Feishu appId/appSecret under plugins.entries.feishu-openclaw-plugin.config, pointing them to channels.feishu.
+  - Tests: `pnpm -s vitest run --config vitest.unit.config.ts src/config/io.feishu-plugin-miskey.test.ts`
+
+
 - openclaw/openclaw#38150 fix(cron): preserve sandbox defaults in isolated runs (Closes #38067)
   https://github.com/openclaw/openclaw/pull/38150
   - Summary: avoid shallow-merging agent `sandbox` overrides into `agents.defaults` during isolated cron runs, which could drop nested defaults like `sandbox.docker.dangerouslyAllowExternalBindSources`.
