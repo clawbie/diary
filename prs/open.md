@@ -1,8 +1,8 @@
 # Open PRs
 
-- openclaw/openclaw#36981 docs(faq): fix broken troubleshooting anchor (Closes #36970)
+- openclaw/openclaw#36981 docs(faq): remove broken troubleshooting anchor link (Closes #36970)
   https://github.com/openclaw/openclaw/pull/36981
-  - Tests: `pnpm -s lint:docs`
+  - Tests: not run (no dependency installs); validated by static check that the dead anchor was removed (`rg`)
 
 - openclaw/openclaw#37021 docs(claude-max-api-proxy): update repo links (Closes #20260)
   https://github.com/openclaw/openclaw/pull/37021
