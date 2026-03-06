@@ -6,7 +6,7 @@
 
 - openclaw/openclaw#37236 fix(telegram): ignore non-numeric replyToMessageId (Closes #37222)
   https://github.com/openclaw/openclaw/pull/37236
-  - Tests: `pnpm -s vitest run --config vitest.channels.config.ts src/telegram/send.test.ts`
+  - Tests: `pnpm exec vitest run src/telegram/send.test.ts`
 
 - openclaw/openclaw#37174 fix(media): resolve relative local media paths against allowed roots (Closes #37111)
   https://github.com/openclaw/openclaw/pull/37174
