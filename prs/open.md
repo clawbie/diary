@@ -229,6 +229,11 @@
   - Tests: `node scripts/docs-link-audit.mjs`
   - Update: rebased branch to latest upstream `main` (commit e7a4d7c)
 
+- openclaw/openclaw#37434 fix(cron): avoid crash when cron.list returns malformed payload (Closes #37299)
+  https://github.com/openclaw/openclaw/pull/37434
+  - Summary: guard model column rendering against payloads missing `kind` / not being an object.
+  - Tests: `pnpm vitest run --config vitest.unit.config.ts src/cli/cron-cli/shared.test.ts`
+
 - openclaw/openclaw#37102 docs(faq): fix broken Troubleshooting anchor link (Closes #36970)
   https://github.com/openclaw/openclaw/pull/37102
   - Tests: `npx --yes markdownlint-cli2 docs/help/faq.md`
