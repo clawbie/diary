@@ -1,5 +1,10 @@
 # Open PRs
 
+- openclaw/openclaw#37504 fix(delivery-recovery): stop retrying Telegram permanent Bad Request errors (Closes #37497)
+  https://github.com/openclaw/openclaw/pull/37504
+  - Summary: treat Telegram 400 errors like "message to be replied not found" / "message is too long" as permanent so delivery recovery moves them to failed/ instead of retrying forever.
+  - Tests: `npx --no-install vitest run src/infra/outbound/outbound.test.ts`
+
 - openclaw/openclaw#37492 fix(infra): classify wrapped 'fetch failed' as transient (Closes #37375)
   https://github.com/openclaw/openclaw/pull/37492
   - Summary: treat plain `Error` messages that include `fetch failed` as transient network errors so a single channel’s startup fetch failure (e.g. Discord gateway/bot fetch) won’t crash-loop the gateway.
