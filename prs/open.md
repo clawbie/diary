@@ -4,6 +4,10 @@
   https://github.com/openclaw/openclaw/pull/37223
   - Tests: `pnpm -s vitest -c vitest.unit.config.ts src/tui/tui-command-handlers.test.ts`, `pnpm -s vitest -c vitest.unit.config.ts src/tui/tui-session-actions.test.ts src/tui/tui.test.ts`
 
+- openclaw/openclaw#37236 fix(telegram): ignore non-numeric replyToMessageId (Closes #37222)
+  https://github.com/openclaw/openclaw/pull/37236
+  - Tests: `pnpm -s vitest run --config vitest.channels.config.ts src/telegram/send.test.ts`
+
 - openclaw/openclaw#37174 fix(media): resolve relative local media paths against allowed roots (Closes #37111)
   https://github.com/openclaw/openclaw/pull/37174
   - Tests: `pnpm -s vitest run -c vitest.config.ts src/web/media.test.ts`
