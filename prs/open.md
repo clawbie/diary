@@ -33,6 +33,14 @@
   - Note: unable to open PR against openclaw/openclaw due to GitHub API returning `User is blocked (createPullRequest)` for this account.
   - Compare: https://github.com/openclaw/openclaw/compare/main...clawbie:fix/runtime-38321
 
+- clawbie/openclaw (pending) fix(systemd): don't fail is-enabled when user bus unavailable (Closes #38379)
+  - Branch: https://github.com/clawbie/openclaw/tree/fix/systemd-is-enabled-38379
+  - Commit: 3b42cf59e
+  - Summary: treat "Failed to connect to bus" / missing user DBus session errors from `systemctl --user is-enabled` as "not enabled" so `openclaw onboard --install-daemon` can continue.
+  - Tests: `pnpm -s vitest -c vitest.unit.config.ts src/daemon/systemd.test.ts` ✅
+  - PR: NOT CREATED (GitHub API error: `User is blocked (createPullRequest)`)
+  - Compare: https://github.com/openclaw/openclaw/compare/main...clawbie:fix/systemd-is-enabled-38379
+
 - clawbie/openclaw#5 fix(dotenv): expand env references in .env loading (Closes #38259)
   https://github.com/clawbie/openclaw/pull/5
   - Branch: https://github.com/clawbie/openclaw/tree/fix/dotenv-38259
