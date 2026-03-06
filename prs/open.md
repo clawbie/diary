@@ -22,10 +22,10 @@
 - openclaw/openclaw#36298 fix(gateway): create transcript for chat.inject when missing (Closes #36170)
   https://github.com/openclaw/openclaw/pull/36298
 
-- clawbie/openclaw (pending) fix(gateway): create missing transcript file on chat.inject (Closes #36170)
-  - Branch: https://github.com/clawbie/openclaw/tree/fix-chat-inject-36170
-  - PR: NOT CREATED (gh auth unavailable in this environment). Suggested create URL:
-    https://github.com/openclaw/openclaw/compare/main...clawbie:fix-chat-inject-36170?expand=1
+- openclaw/openclaw#36959 fix(gateway): create transcript file for chat.inject when missing (Closes #36170)
+  https://github.com/openclaw/openclaw/pull/36959
+  - Branch: `fix/chat-inject-create-missing-36170`
+  - Tests: `npx vitest run src/gateway/server-methods/chat.directive-tags.test.ts src/gateway/server-methods/chat.inject.parentid.test.ts`
 
 - openclaw/openclaw#35885 fix(browser): allow disabling AutomationControlled flag (Closes #35721)
   https://github.com/openclaw/openclaw/pull/35885
