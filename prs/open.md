@@ -1,5 +1,10 @@
 # Open PRs
 
+- openclaw/openclaw#37092 fix(docs): remove broken troubleshooting link from FAQ (Closes #36970)
+  https://github.com/openclaw/openclaw/pull/37092
+  - Summary: remove dead cross-doc troubleshooting link in Xfinity/Comcast SSL FAQ entry.
+  - Tests: not run (docs-only; vitest binary not available in this environment)
+
 - openclaw/openclaw#37308 docs: update claude-max-api-proxy links (Closes #20260)
   https://github.com/openclaw/openclaw/pull/37308
   - Tests: `npm test` (partial run; exited with SIGTERM; no failures reported before termination)
