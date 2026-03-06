@@ -1,5 +1,10 @@
 # Open PRs
 
+- openclaw/openclaw#37348 fix(daemon): allow gateway install under sudo when user bus unavailable (Closes #37340)
+  https://github.com/openclaw/openclaw/pull/37348
+  - Summary: treat `systemctl --user is-enabled` "Failed to connect to bus" as "not enabled" so install/onboard can proceed.
+  - Tests: `pnpm -s vitest run src/daemon/systemd.test.ts`
+
 - openclaw/openclaw#37292 fix(telegram): skip empty text replies (Closes #37278)
   https://github.com/openclaw/openclaw/pull/37292
   - Summary: drop whitespace-only Telegram text replies so we never call sendMessage with empty text (prevents provider restarts).
