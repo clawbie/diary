@@ -1,5 +1,9 @@
 # Open PRs
 
+- openclaw/openclaw#37122 docs(readme): update message send flag to --target (Closes #10458)
+  https://github.com/openclaw/openclaw/pull/37122
+  - Tests: `pnpm -s lint README.md`, `pnpm -s lint:docs README.md`, `pnpm -s docs:check-links`
+
 - openclaw/openclaw#37102 docs(faq): fix broken Troubleshooting anchor link (Closes #36970)
   https://github.com/openclaw/openclaw/pull/37102
   - Tests: `npx --yes markdownlint-cli2 docs/help/faq.md docs/zh-CN/help/faq.md`
