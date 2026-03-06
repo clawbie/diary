@@ -1,9 +1,9 @@
 # Open PRs
 
-- openclaw/openclaw#38111 fix(cron): preserve sandbox docker dangerous flags in isolated runs (Closes #38067)
-  https://github.com/openclaw/openclaw/pull/38111
+- openclaw/openclaw#38150 fix(cron): preserve sandbox defaults in isolated runs (Closes #38067)
+  https://github.com/openclaw/openclaw/pull/38150
   - Summary: avoid shallow-merging agent `sandbox` overrides into `agents.defaults` during isolated cron runs, which could drop nested defaults like `sandbox.docker.dangerouslyAllowExternalBindSources`.
-  - Tests: `pnpm -s vitest run src/cron/isolated-agent/run.skill-filter.test.ts src/cron/isolated-agent/run.payload-fallbacks.test.ts src/cron/isolated-agent/run.cron-model-override.test.ts src/cron/isolated-agent/run.session-key.test.ts`
+  - Tests: `npx --no-install vitest src/cron/isolated-agent/*.test.ts`
 
 - openclaw/openclaw#38082 fix(webchat): hide delivery-mirror transcript entries from chat.history (Closes #38061)
   https://github.com/openclaw/openclaw/pull/38082
