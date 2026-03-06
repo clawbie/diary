@@ -1,5 +1,10 @@
 # Open PRs
 
+- openclaw/openclaw#37809 fix: suppress Telegram NO_REPLY action envelope (Closes #37727)
+  https://github.com/openclaw/openclaw/pull/37809
+  - Summary: treat `{ "action": "NO_REPLY" }` as silent when parsing reply directives, preventing it from being delivered as literal JSON to end users.
+  - Tests: `pnpm -s vitest -c vitest.unit.config.ts src/infra/outbound/payloads.test.ts`
+
 - openclaw/openclaw#37559 fix(logging): rotate file logs after midnight for long-running gateway (Closes #37388)
   https://github.com/openclaw/openclaw/pull/37559
   - Summary: recreate subsystem child logger when the root file logger is rebuilt (daily rolling file), so logs switch to the new day without restarting.
