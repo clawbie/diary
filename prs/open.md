@@ -3,7 +3,7 @@
 - openclaw/openclaw#37559 fix(logging): rotate file logs after midnight for long-running gateway (Closes #37388)
   https://github.com/openclaw/openclaw/pull/37559
   - Summary: recreate subsystem child logger when the root file logger is rebuilt (daily rolling file), so logs switch to the new day without restarting.
-  - Tests: `npx --no-install vitest src/logger.test.ts -t "uses daily rolling default log file"`
+  - Tests: `pnpm vitest run src/logging/subsystem.test.ts src/logging/logger-settings.test.ts src/logging/logger-env.test.ts src/logging/log-file-size-cap.test.ts --config vitest.unit.config.ts`
 
 - openclaw/openclaw#37504 fix(delivery-recovery): stop retrying Telegram permanent Bad Request errors (Closes #37497)
   https://github.com/openclaw/openclaw/pull/37504
