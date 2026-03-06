@@ -40,6 +40,11 @@
   - Summary: when npm/npx CLI script can't be resolved (e.g. nvm-windows/volta/fnm), fall back to executing the npm.cmd/npx.cmd shims via cmd.exe wrapper.
   - Tests: `pnpm test src/process/exec.windows.test.ts`
 
+- openclaw/openclaw#37754 fix(plugins): resolve secret refs in status report (Closes #37633)
+  https://github.com/openclaw/openclaw/pull/37754
+  - Summary: resolve secret-backed config fields (e.g. env var refs) before validating plugin connectivity and building the status report.
+  - Tests: `pnpm test:fast -- src/plugins/status.test.ts`
+
 - openclaw/openclaw#37646 fix(models): include config-injected models in --all list (Closes #37635)
   https://github.com/openclaw/openclaw/pull/37646
   - Summary: merge config-only provider models (from `models.providers.<provider>.models`) into the `--all` models list, even when missing from the underlying registry.
