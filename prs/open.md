@@ -12,6 +12,10 @@
   https://github.com/openclaw/openclaw/pull/37174
   - Tests: `pnpm -s vitest run -c vitest.config.ts src/web/media.test.ts`
 
+- openclaw/openclaw#37254 fix(config): accept tools.web.fetch.firecrawl in schema (Closes #27833)
+  https://github.com/openclaw/openclaw/pull/37254
+  - Tests: `npx --no-install vitest run src/config/config.web-fetch-firecrawl-schema.test.ts --config vitest.unit.config.ts`
+
 - openclaw/openclaw#37241 fix(docs): remove broken troubleshooting anchor for Xfinity SSL (Closes #36970)
   https://github.com/openclaw/openclaw/pull/37241
   - Tests: `node scripts/docs-link-audit.mjs`
