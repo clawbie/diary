@@ -1,5 +1,10 @@
 # Open PRs
 
+- openclaw/openclaw#37492 fix(infra): classify wrapped 'fetch failed' as transient (Closes #37375)
+  https://github.com/openclaw/openclaw/pull/37492
+  - Summary: treat plain `Error` messages that include `fetch failed` as transient network errors so a single channel’s startup fetch failure (e.g. Discord gateway/bot fetch) won’t crash-loop the gateway.
+  - Tests: `npx --no-install vitest run src/infra/unhandled-rejections.test.ts`
+
 - openclaw/openclaw#37462 fix(cron): handle paginated cron.list response (Closes #37299)
   https://github.com/openclaw/openclaw/pull/37462
   - Summary: accept either a raw array (older gateway) or paginated response `{ jobs, total, ... }` for `openclaw cron list` to avoid CLI TypeError.
