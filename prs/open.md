@@ -34,7 +34,7 @@
 - openclaw/openclaw#37938 fix(nextcloud-talk): avoid importing src/infra from bundled extension (Closes #37915)
   https://github.com/openclaw/openclaw/pull/37938
   - Summary: avoid importing from ../../../src (not shipped in npm release) in the Nextcloud Talk extension, preventing plugin load crash.
-  - Tests: `pnpm -s vitest -r . extensions/nextcloud-talk/src/wait-for-abort.test.ts --run`
+  - Tests: `npx --no-install vitest run extensions/nextcloud-talk/src/channel.startup.test.ts`
 
 - openclaw/openclaw#37559 fix(logging): rotate file logs after midnight for long-running gateway (Closes #37388)
   https://github.com/openclaw/openclaw/pull/37559
