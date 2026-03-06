@@ -1,5 +1,10 @@
 # Open PRs
 
+- openclaw/openclaw#37419 fix(cli): keep stdout clean for --json commands (Closes #37323)
+  https://github.com/openclaw/openclaw/pull/37419
+  - Summary: route startup/plugin logs to stderr when `--json` is present so JSON output isn't corrupted.
+  - Tests: `pnpm -s vitest run -c vitest.unit.config.ts src/cli/program/preaction.test.ts`, `pnpm -s vitest run -c vitest.unit.config.ts src/cli/program/json-mode.stderr-routing.test.ts`
+
 - openclaw/openclaw#37348 fix(daemon): allow gateway install under sudo when user bus unavailable (Closes #37340)
   https://github.com/openclaw/openclaw/pull/37348
   - Summary: treat `systemctl --user is-enabled` "Failed to connect to bus" as "not enabled" so install/onboard can proceed.
