@@ -1,8 +1,8 @@
 # Open PRs
 
-- openclaw/openclaw#36981 docs(faq): remove broken troubleshooting anchor link (Closes #36970)
-  https://github.com/openclaw/openclaw/pull/36981
-  - Tests: CI (docs-scope / check-docs)
+- openclaw/openclaw#37102 docs(faq): fix broken Troubleshooting anchor link (Closes #36970)
+  https://github.com/openclaw/openclaw/pull/37102
+  - Tests: `npx --yes markdownlint-cli2 docs/help/faq.md docs/zh-CN/help/faq.md`
 
 - openclaw/openclaw#37029 fix(feishu): correct deliveryContext.to prefix (Closes #36987)
   https://github.com/openclaw/openclaw/pull/37029
