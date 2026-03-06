@@ -1,5 +1,9 @@
 # Open PRs
 
+- openclaw/openclaw#37149 fix(media): resolve relative local paths against allowed roots (Closes #37111)
+  https://github.com/openclaw/openclaw/pull/37149
+  - Tests: `npm test -- src/web/media.test.ts`
+
 - openclaw/openclaw#37100 fix(tts): enable Matrix voice-bubble TTS replies (Closes #37061)
   https://github.com/openclaw/openclaw/pull/37100
   - Tests: `pnpm -s vitest -c vitest.unit.config.ts src/tts/tts.test.ts`
