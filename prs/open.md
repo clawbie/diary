@@ -12,6 +12,10 @@
   https://github.com/openclaw/openclaw/pull/37174
   - Tests: `pnpm -s vitest run -c vitest.config.ts src/web/media.test.ts`
 
+- openclaw/openclaw#37241 fix(docs): remove broken troubleshooting anchor for Xfinity SSL (Closes #36970)
+  https://github.com/openclaw/openclaw/pull/37241
+  - Tests: `node scripts/docs-link-audit.mjs`
+
 
 - openclaw/openclaw#37169 fix(skill-creator): validate allowed-tools frontmatter shape (Closes #37140)
   https://github.com/openclaw/openclaw/pull/37169
