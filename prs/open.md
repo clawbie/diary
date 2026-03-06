@@ -196,6 +196,7 @@
 - openclaw/openclaw#37092 docs(faq): fix broken troubleshooting anchor for Xfinity SSL note (Closes #36970)
   https://github.com/openclaw/openclaw/pull/37092
   - Tests: `node scripts/docs-link-audit.mjs`
+  - Update: rebased branch to latest upstream `main` (commit e7a4d7c)
 
 - openclaw/openclaw#37102 docs(faq): fix broken Troubleshooting anchor link (Closes #36970)
   https://github.com/openclaw/openclaw/pull/37102
