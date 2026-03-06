@@ -1,5 +1,9 @@
 # Open PRs
 
+- openclaw/openclaw#37223 fix(tui): allow toggling deliver via /settings (Closes #37168)
+  https://github.com/openclaw/openclaw/pull/37223
+  - Tests: `pnpm -s vitest -c vitest.unit.config.ts src/tui/tui-command-handlers.test.ts`, `pnpm -s vitest -c vitest.unit.config.ts src/tui/tui-session-actions.test.ts src/tui/tui.test.ts`
+
 - openclaw/openclaw#37174 fix(media): resolve relative local media paths against allowed roots (Closes #37111)
   https://github.com/openclaw/openclaw/pull/37174
   - Tests: `pnpm -s vitest run -c vitest.config.ts src/web/media.test.ts`
