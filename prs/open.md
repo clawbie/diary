@@ -23,7 +23,7 @@
 - openclaw/openclaw#37575 fix(gateway): serve Control UI assets when installed via pnpm hardlinks (Closes #37455)
   https://github.com/openclaw/openclaw/pull/37575
   - Summary: allow hardlinked Control UI files (nlink > 1) inside the resolved control-ui root so pnpm global installs don't 404.
-  - Tests: `pnpm exec vitest run --config vitest.gateway.config.ts --pool=forks src/gateway/control-ui.http.test.ts`
+  - Tests: `npx --no-install vitest run src/gateway/control-ui.http.test.ts -t "serves hardlinked assets"`
 
 - openclaw/openclaw#37419 fix(cli): keep stdout clean for --json commands (Closes #37323)
   https://github.com/openclaw/openclaw/pull/37419
