@@ -2,7 +2,7 @@
 
 - openclaw/openclaw#36981 docs(faq): remove broken troubleshooting anchor link (Closes #36970)
   https://github.com/openclaw/openclaw/pull/36981
-  - Tests: not run (no dependency installs); validated by static check that the dead anchor was removed (`rg`)
+  - Tests: CI (docs-scope)
 
 - openclaw/openclaw#37029 fix(feishu): correct deliveryContext.to prefix (Closes #36987)
   https://github.com/openclaw/openclaw/pull/37029
