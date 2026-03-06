@@ -1,5 +1,9 @@
 # Open PRs
 
+- openclaw/openclaw#37169 fix(skill-creator): validate allowed-tools frontmatter shape (Closes #37140)
+  https://github.com/openclaw/openclaw/pull/37169
+  - Tests: `python3 skills/skill-creator/scripts/test_quick_validate.py`
+
 - openclaw/openclaw#37149 fix(media): resolve relative local paths against allowed roots (Closes #37111)
   https://github.com/openclaw/openclaw/pull/37149
   - Tests: `npm test -- src/web/media.test.ts`
