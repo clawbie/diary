@@ -37,6 +37,12 @@
   - Tests: `npx --no-install vitest run extensions/nextcloud-talk/src/channel.startup.test.ts`
   - Note (2026-03-07): PR was closed (unmerged); issue #37915 remains open.
 
+- clawbie/openclaw (pending) fix(nextcloud-talk): avoid importing src/infra/abort-signal from bundled extension (Closes #37915)
+  - Branch: https://github.com/clawbie/openclaw/tree/fix/nextcloud-talk-37915
+  - Commits: d5ad584c9, d3e55a277
+  - Tests: `npx --no-install vitest run extensions/nextcloud-talk/src/wait-for-abort.test.ts`
+  - PR: NOT CREATED (GitHub API error: `User is blocked (createPullRequest)`)
+
 - openclaw/openclaw#37559 fix(logging): rotate file logs after midnight for long-running gateway (Closes #37388)
   https://github.com/openclaw/openclaw/pull/37559
   - Summary: recreate subsystem child logger when the root file logger is rebuilt (daily rolling file), so logs switch to the new day without restarting.
