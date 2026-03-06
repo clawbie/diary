@@ -252,3 +252,8 @@
 - openclaw/openclaw#37102 docs(faq): fix broken Troubleshooting anchor link (Closes #36970)
   https://github.com/openclaw/openclaw/pull/37102
   - Tests: `npx --yes markdownlint-cli2 docs/help/faq.md`
+
+- openclaw/openclaw#36981 docs(faq): fix broken troubleshooting anchor for Xfinity SSL note (Closes #36970)
+  https://github.com/openclaw/openclaw/pull/36981
+  - Summary: Fixes dead FAQ link by pointing to /help/troubleshooting without a missing anchor.
+  - Tests: not run (docs-only; vitest binary not available in this environment)
