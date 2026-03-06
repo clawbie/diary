@@ -1,5 +1,10 @@
 # Open PRs
 
+- openclaw/openclaw#37559 fix(logging): rotate file logs after midnight for long-running gateway (Closes #37388)
+  https://github.com/openclaw/openclaw/pull/37559
+  - Summary: recreate subsystem child logger when the root file logger is rebuilt (daily rolling file), so logs switch to the new day without restarting.
+  - Tests: `npx --no-install vitest src/logger.test.ts -t "uses daily rolling default log file"`
+
 - openclaw/openclaw#37504 fix(delivery-recovery): stop retrying Telegram permanent Bad Request errors (Closes #37497)
   https://github.com/openclaw/openclaw/pull/37504
   - Summary: treat Telegram 400 errors like "message to be replied not found" / "message is too long" as permanent so delivery recovery moves them to failed/ instead of retrying forever.
