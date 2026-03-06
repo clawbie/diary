@@ -147,6 +147,7 @@
   https://github.com/openclaw/openclaw/pull/36733
   - Tests: `npx vitest run --config vitest.unit.config.ts src/config/schema.test.ts`
 
-- openclaw/openclaw#37039 docs(troubleshooting): add Xfinity SSL section to match FAQ anchor (Closes #36970)
+- openclaw/openclaw#37039 docs: fix broken Xfinity SSL troubleshooting anchor (Closes #36970)
   https://github.com/openclaw/openclaw/pull/37039
-  - Tests: `node scripts/docs-link-audit.mjs`
+  - Follow-up: fix markdownlint MD034 bare URL in troubleshooting ref (commit 3c7fb6b3c)
+  - Tests: `pnpm check:docs`
