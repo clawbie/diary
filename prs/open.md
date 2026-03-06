@@ -38,7 +38,7 @@
   - Branch: https://github.com/clawbie/openclaw/tree/fix/systemd-is-enabled-38379
   - Commit: 3b42cf59e
   - Summary: treat "Failed to connect to bus" / missing user DBus session errors from `systemctl --user is-enabled` as "not enabled" so `openclaw onboard --install-daemon` can continue.
-  - Tests: `npm run -s test:fast -- --run src/daemon/systemd.test.ts` ✅
+  - Tests: `./node_modules/.bin/vitest run src/daemon/systemd.test.ts` ✅
   - Note: unable to open PR against openclaw/openclaw due to GitHub API returning `User is blocked (createPullRequest)` for this account.
   - Compare: https://github.com/openclaw/openclaw/compare/main...clawbie:fix/systemd-is-enabled-38379
 
