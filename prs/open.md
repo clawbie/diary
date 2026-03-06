@@ -294,3 +294,8 @@
   https://github.com/openclaw/openclaw/pull/37754
   - Summary: buildPluginStatusReport now loads config with secret resolution enabled so env-backed SecretRef credentials don’t cause plugin registration errors in `openclaw plugins list`.
   - Tests: `npm test -- --config vitest.unit.config.ts src/plugins/status.test.ts`
+
+- openclaw/openclaw#37858 docs: fix broken FAQ troubleshooting anchor (Closes #36970)
+  https://github.com/openclaw/openclaw/pull/37858
+  - Summary: remove broken cross-doc anchor from the Comcast/Xfinity SSL FAQ entry; link to /help/troubleshooting without a missing fragment.
+  - Tests: not run (docs-only)
