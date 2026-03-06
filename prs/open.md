@@ -45,7 +45,7 @@
   - Branch: `fix/cli-37563`
   - Commit: `39908370f`
   - Summary: when npm/npx CLI script can't be resolved (e.g. nvm-windows/volta/fnm), fall back to executing the npm.cmd/npx.cmd shims via cmd.exe wrapper.
-  - Tests: `pnpm test src/process/exec.windows.test.ts`
+  - Tests: `node node_modules/vitest/vitest.mjs run src/process/exec.windows.test.ts`
 
 - openclaw/openclaw#37754 fix(plugins): resolve secret refs in status report (Closes #37633)
   https://github.com/openclaw/openclaw/pull/37754
