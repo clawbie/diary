@@ -65,9 +65,9 @@
 - openclaw/openclaw#38043 fix(windows): npm pack works when Node path contains spaces (Closes #37563)
   https://github.com/openclaw/openclaw/pull/38043
   - Branch: `fix/windows-37563`
-  - Commit: `081676c4a`
+  - Commits: `9cb3f1aae`, `081676c4a`, `4e91169f0`
   - Summary: detect node.exe + npm-cli.js invocation and (when any argv contains whitespace) enable `windowsVerbatimArguments` and pre-quote args per CreateProcess rules to avoid argv mangling under `C:\\Program Files\\...`.
-  - Tests: `pnpm -s vitest src/process/exec.windows.test.ts`
+  - Tests: `pnpm exec vitest run src/process/exec.windows.test.ts`
 
 - openclaw/openclaw#37646 fix(models): include config-injected models in --all list (Closes #37635)
   https://github.com/openclaw/openclaw/pull/37646
