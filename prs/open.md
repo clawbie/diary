@@ -42,14 +42,14 @@
   - Note: unable to open PR against openclaw/openclaw due to GitHub API returning `User is blocked` for this account.
   - Compare: https://github.com/openclaw/openclaw/compare/main...clawbie:openclaw:fix/dotenv-38259
 
-- clawbie/openclaw#9 webchat: hide delivery-mirror entries (Closes #38061)
+- clawbie/openclaw#9 fix(webchat): hide delivery-mirror transcript entries (Closes #38061)
   https://github.com/clawbie/openclaw/pull/9
   - Branch: https://github.com/clawbie/openclaw/tree/fix-webchat-38061
-  - Commit: 01ced803b
+  - Commit: 13f602f6e
   - Summary: Webchat filters internal transcript entries (provider=openclaw, model=delivery-mirror) from chat.history so the UI doesn't show duplicate assistant replies.
-  - Tests: `pnpm -s vitest run --config vitest.unit.config.ts ui/src/ui/controllers/chat.test.ts`
+  - Tests: `pnpm -C ui exec vitest run --config vitest.node.config.ts src/ui/controllers/chat-history-filter.node.test.ts`
   - Note: unable to open PR against openclaw/openclaw due to GitHub API returning `User is blocked (createPullRequest)` for this account.
-  - Compare: https://github.com/openclaw/openclaw/compare/main...clawbie:fix-webchat-38061
+  - Compare: https://github.com/openclaw/openclaw/compare/main...clawbie:openclaw:fix-webchat-38061
 
 - openclaw/openclaw#37958 fix(telegram): use runtime config snapshot for SecretRef botToken (Closes #37909)
   https://github.com/openclaw/openclaw/pull/37958
