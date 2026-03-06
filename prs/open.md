@@ -189,7 +189,7 @@
   https://github.com/openclaw/openclaw/pull/37039
   - Status: OPEN (awaiting review)
   - Update: avoid bare URL for Xfinity reference (commit 3c7fb6b3c)
-  - Tests: `pnpm check:docs`
+  - Tests: `node scripts/docs-link-audit.mjs`
 
 - openclaw/openclaw#37086 fix(tts): send Matrix TTS replies as voice bubbles (Closes #37061)
   https://github.com/openclaw/openclaw/pull/37086
