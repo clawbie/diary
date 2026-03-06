@@ -1,5 +1,10 @@
 # Open PRs
 
+- openclaw/openclaw#37958 fix(telegram): use runtime config snapshot for SecretRef botToken (Closes #37909)
+  https://github.com/openclaw/openclaw/pull/37958
+  - Summary: prefer `getRuntimeConfigSnapshot()` for Telegram sends so SecretRef-backed `channels.telegram.botToken` is already resolved when tool-driven outbound paths call into telegram/send.
+  - Tests: `pnpm -s vitest run src/telegram/send.test.ts src/telegram/token.test.ts`
+
 - openclaw/openclaw#37809 fix: suppress Telegram NO_REPLY action envelope (Closes #37727)
   https://github.com/openclaw/openclaw/pull/37809
   - Summary: treat `{ "action": "NO_REPLY" }` as silent when parsing reply directives, preventing it from being delivered as literal JSON to end users.
