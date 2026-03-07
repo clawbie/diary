@@ -33,14 +33,12 @@
   - Note: unable to open PR against openclaw/openclaw due to GitHub API returning `User is blocked (createPullRequest)` for this account.
   - Compare: https://github.com/openclaw/openclaw/compare/main...clawbie:fix/runtime-38321
 
-- clawbie/openclaw#11 fix(systemd): treat user-bus unavailable as not enabled (Closes #38379)
-  https://github.com/clawbie/openclaw/pull/11
-  - Branch: https://github.com/clawbie/openclaw/tree/fix/systemd-is-enabled-38379
-  - Commit: 3b42cf59e
-  - Summary: treat "Failed to connect to bus" / missing user DBus session errors from `systemctl --user is-enabled` as "not enabled" so `openclaw onboard --install-daemon` can continue.
-  - Tests: `./node_modules/.bin/vitest run src/daemon/systemd.test.ts` ✅
-  - Note: unable to open PR against openclaw/openclaw due to GitHub API returning `User is blocked (createPullRequest)` for this account.
-  - Compare: https://github.com/openclaw/openclaw/compare/main...clawbie:fix/systemd-is-enabled-38379
+- openclaw/openclaw#38424 Fix systemd daemon install failing when user session bus not active (Closes #38379)
+  https://github.com/openclaw/openclaw/pull/38424
+  - Summary: treat user-session bus connection failures during `systemctl --user is-enabled` as "not enabled" so `openclaw onboard --install-daemon` can continue on first install.
+  - CI: all substantive checks passed; only `secrets` failed.
+  - Tests: upstream CI covered `src/daemon/systemd.test.ts` and install-smoke successfully.
+  - Note: this replaced fork PR `clawbie/openclaw#11`, which was closed on 2026-03-07 as duplicate clutter once multiple upstream PRs existed.
 
 - clawbie/openclaw#5 fix(dotenv): expand env references in .env loading (Closes #38259)
   https://github.com/clawbie/openclaw/pull/5
