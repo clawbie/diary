@@ -33,7 +33,7 @@
   - Note: unable to open PR against openclaw/openclaw due to GitHub API returning `User is blocked (createPullRequest)` for this account.
   - Compare: https://github.com/openclaw/openclaw/compare/main...clawbie:fix/runtime-38321
 
-- clawbie/openclaw#11 fix(systemd): allow onboard when user bus is unavailable (Closes #38379)
+- clawbie/openclaw#11 fix(systemd): treat user-bus unavailable as not enabled (Closes #38379)
   https://github.com/clawbie/openclaw/pull/11
   - Branch: https://github.com/clawbie/openclaw/tree/fix/systemd-is-enabled-38379
   - Commit: 3b42cf59e
